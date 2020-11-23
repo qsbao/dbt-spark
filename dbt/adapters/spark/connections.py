@@ -230,7 +230,7 @@ class SparkConnectionManager(SQLConnectionManager):
     SPARK_CLUSTER_HTTP_PATH = "/sql/protocolv1/o/{organization}/{cluster}"
     SPARK_SQL_ENDPOINT_HTTP_PATH = "/sql/1.0/endpoints/{endpoint}"
     SPARK_CONNECTION_URL = (
-        "https://{host}:{port}" + SPARK_CLUSTER_HTTP_PATH
+        "http://{host}:{port}/cliservice"
     )
 
     @contextmanager
